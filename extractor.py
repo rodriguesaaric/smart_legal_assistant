@@ -70,18 +70,22 @@ def split_into_clauses(text: str) -> List[Dict]:
     clauses = []
     cur = []
     clause_id = None
-
+    clause_pattern = re.compile(
+        r"^\s*((?:ARTICLE|SECTION)\s+(?:[IVXLCDM]+|\d+)|(?:\d+(?:\.\d+)*)|(?:\([a-z]\))|(?:[A-Z]\.)|APPENDIX)", 
+        re.IGNORECASE
+    )
     for line in text.splitlines():
         line = line.strip()
         if not line:
             continue
 
         # Detect numbered clause heading (e.g., "1.", "2.1", "Section 3")
-        match = re.match(r"^(\d+(\.\d+)*|Section\s+\d+)", line, re.IGNORECASE)
+        #match = re.match(r"^(\d+(\.\d+)*|Section\s+\d+)", line, re.IGNORECASE)
+        match = clause_pattern.match(line)
         if match:
             if cur:
                 clauses.append({"clause_id": clause_id, "text": " ".join(cur)})
-            clause_id = match.group(0)  # first token = number
+            clause_id = match.group(1).strip()  # first token = number
             cur = [line]
         else:
             cur.append(line)
