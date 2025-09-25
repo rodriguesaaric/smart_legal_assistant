@@ -7,6 +7,10 @@ import pytesseract
 from PIL import Image
 import os
 from dotenv import load_dotenv
+
+import markdown2
+from bs4 import BeautifulSoup
+
 load_dotenv()
 
 # ----------- File readers -----------
@@ -46,6 +50,21 @@ def extract_text_from_image(file_path: str) -> str:
     img = Image.open(file_path)
     return pytesseract.image_to_string(img)
 
+# --- New Function to handle Markdown and HTML ---
+def extract_text_from_markdown_html(file_path: str) -> str:
+    with open(file_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    # Convert markdown to HTML first
+    if file_path.lower().endswith('.md'):
+        html = markdown2.markdown(content)
+    else:
+        html = content
+        
+    # Use BeautifulSoup to strip all HTML tags and get plain text
+    soup = BeautifulSoup(html, "html.parser")
+    return soup.get_text(separator='\n', strip=True)
+
 # ----------- Clause segmentation -----------
 def split_into_clauses(text: str) -> List[Dict]:
     clauses = []
@@ -81,6 +100,8 @@ def extract_clauses(file_path: str, file_type: str) -> List[Dict]:
         text = extract_text_from_txt(file_path)
     elif file_type in ["jpg", "jpeg", "png"]:
         text = extract_text_from_image(file_path)
+    elif file_type in ["md", "html"]:
+        text = extract_text_from_markdown_html(file_path)
     else:
         raise ValueError("Unsupported file type")
 
