@@ -11,6 +11,9 @@ from dotenv import load_dotenv
 import markdown2
 from bs4 import BeautifulSoup
 
+
+# --- New Import for AI Model ---
+import spacy
 load_dotenv()
 
 # ----------- File readers -----------
@@ -19,6 +22,10 @@ POPPLER_PATH = os.getenv("POPPLER_PATH")
 print(f"DEBUG: Using Tesseract Path: {TESSERACT_PATH}")
 if TESSERACT_PATH:
     pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
+
+
+# It will load from the .env file thanks to load_dotenv()
+
 def extract_text_from_pdf(file_path: str) -> str:
     text = []
     try:
@@ -66,32 +73,76 @@ def extract_text_from_markdown_html(file_path: str) -> str:
     return soup.get_text(separator='\n', strip=True)
 
 # ----------- Clause segmentation -----------
+MODEL_PATH = "./training/clause-model"
+NLP = None
+try:
+    NLP = spacy.load(MODEL_PATH)
+    print(f"DEBUG: Successfully loaded local AI model from {MODEL_PATH}")
+except IOError:
+    print(f"ERROR: Could not load model from {MODEL_PATH}.")
+    print("Did you run the 'train.py' script first?")
+except ImportError:
+    print("ERROR: spaCy not found. Please run 'pip install spacy'")
+
+
+# ---------------------------------------------------------
+# --- 🤖 AI Clause segmentation (REPLACED Regex) ---
+# ---------------------------------------------------------
 def split_into_clauses(text: str) -> List[Dict]:
+    """
+    Splits a document's text into clauses using our custom-trained
+    local spaCy model.
+    """
+    if not NLP:
+        print("ERROR: AI Model (NLP) is not loaded. Cannot split clauses.")
+        return [{"clause_id": "ERROR: Model not loaded", "text": text}]
+        
+    if not text or text.isspace():
+        return []
+
+    print("DEBUG: Starting AI clause segmentation...")
+    doc = NLP(text)
+    
+    # Get the *start positions* of all detected clause headings
+    clause_starts = [ent.start_char for ent in doc.ents if ent.label_ == "CLAUSE_START"]
+    clause_starts.sort()
+
     clauses = []
-    cur = []
-    clause_id = None
-    clause_pattern = re.compile(
-        r"^\s*((?:ARTICLE|SECTION)\s+(?:[IVXLCDM]+|\d+)|(?:\d+(?:\.\d+)*)|(?:\([a-z]\))|(?:[A-Z]\.)|APPENDIX)", 
-        re.IGNORECASE
-    )
-    for line in text.splitlines():
-        line = line.strip()
-        if not line:
+    
+    if not clause_starts:
+        # No clauses found, return all text as one blob
+        return [{"clause_id": "Unknown", "text": text.strip()}]
+
+    # 1. Handle Preamble (text before the first clause)
+    if clause_starts[0] > 0:
+        preamble_text = text[:clause_starts[0]].strip()
+        if preamble_text:
+            clauses.append({"clause_id": "Preamble", "text": preamble_text})
+
+    # 2. Loop through all found clauses
+    for i in range(len(clause_starts)):
+        start_char = clause_starts[i]
+        
+        # Determine the end of the clause
+        if i + 1 < len(clause_starts):
+            # End is the start of the next clause
+            end_char = clause_starts[i+1]
+        else:
+            # This is the last clause, so it goes to the end of the text
+            end_char = len(text)
+            
+        # Get the full text of this clause
+        clause_text_full = text[start_char:end_char].strip()
+        
+        if not clause_text_full:
             continue
 
-        # Detect numbered clause heading (e.g., "1.", "2.1", "Section 3")
-        #match = re.match(r"^(\d+(\.\d+)*|Section\s+\d+)", line, re.IGNORECASE)
-        match = clause_pattern.match(line)
-        if match:
-            if cur:
-                clauses.append({"clause_id": clause_id, "text": " ".join(cur)})
-            clause_id = match.group(1).strip()  # first token = number
-            cur = [line]
-        else:
-            cur.append(line)
+        # Try to find the clause_id (the first line)
+        first_line = clause_text_full.split('\n', 1)[0].strip()
+        
+        clauses.append({"clause_id": first_line, "text": clause_text_full})
 
-    if cur:
-        clauses.append({"clause_id": clause_id, "text": " ".join(cur)})
+    print(f"DEBUG: Found {len(clauses)} clauses.")
     return clauses
 
 # ----------- Main function -----------

@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File
 import shutil
 import os
 from extractor import extract_clauses
+from fastapi.concurrency import run_in_threadpool
 
 app = FastAPI(title="Clause Extractor Service")
 
@@ -15,7 +16,15 @@ async def extract(file: UploadFile = File(...)):
         shutil.copyfileobj(file.file, buffer)
 
     ext = file.filename.split(".")[-1].lower()
-    clauses = extract_clauses(file_path, ext)
+    # 2. RUN THE BLOCKING FUNCTION IN A THREAD
+    # This runs your AI model without freezing the server.
+    clauses = await run_in_threadpool(extract_clauses, file_path, ext)
+
+    # 3. Clean up the uploaded file (optional, but good practice)
+    try:
+        os.remove(file_path)
+    except Exception as e:
+        print(f"Warning: Could not remove temp file {file_path}. {e}")
 
     return {
         "document_name": file.filename,
