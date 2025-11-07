@@ -1,0 +1,47 @@
+[
+  {
+    "id":1,
+    "clause":"The Company may terminate this Agreement at any time without prior notice.",
+    "A":0.6318124177,
+    "M":0.6456563062,
+    "R":0.5134967205,
+    "T":0.4255574832,
+    "I":0.502999964
+  },
+  {
+    "id":2,
+    "clause":"Payment of INR 10,000 shall be made within 30 days from invoice date.",
+    "A":0.5,
+    "M":0.6456563062,
+    "R":0.4805098805,
+    "T":0.6034832499,
+    "I":0.458098506
+  },
+  {
+    "id":3,
+    "clause":"The Contractor will use reasonable efforts to perform the Services.",
+    "A":0.4255574832,
+    "M":0.6456563062,
+    "R":0.5074994376,
+    "T":0.4255574832,
+    "I":0.4284935705
+  },
+  {
+    "id":4,
+    "clause":"All disputes shall be finally settled by arbitration in accordance with the Rules.",
+    "A":0.5890404341,
+    "M":0.6456563062,
+    "R":0.5582345181,
+    "T":0.4255574832,
+    "I":0.458098506
+  },
+  {
+    "id":5,
+    "clause":"Unless otherwise provided, the parties agree to abide by the applicable laws.",
+    "A":0.4255574832,
+    "M":0.6456563062,
+    "R":0.5134967205,
+    "T":0.4255574832,
+    "I":0.5329521673
+  }
+]
