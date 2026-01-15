@@ -12,7 +12,7 @@ def train_spacy_model(
 ):
     """
     Trains a spaCy NER model by updating a pre-trained model.
-    This is more effective than training from blank.
+    
     """
     print("Starting model training...")
 

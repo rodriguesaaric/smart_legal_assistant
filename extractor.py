@@ -10,22 +10,33 @@ from dotenv import load_dotenv
 
 import markdown2
 from bs4 import BeautifulSoup
-
-
-# --- New Import for AI Model ---
 import spacy
+
+
+import json
+from groq import Groq
+
 load_dotenv()
 
-# ----------- File readers -----------
+# ----------- Configuration -----------
 TESSERACT_PATH = os.getenv("TESSERACT_CMD_PATH")
 POPPLER_PATH = os.getenv("POPPLER_PATH")
+GROQ_API_KEY = os.getenv("GROQ_API_KEY") 
+
 print(f"DEBUG: Using Tesseract Path: {TESSERACT_PATH}")
 if TESSERACT_PATH:
     pytesseract.pytesseract.tesseract_cmd = TESSERACT_PATH
 
 
-# It will load from the .env file thanks to load_dotenv()
+groq_client = None
+if GROQ_API_KEY:
+    try:
+        groq_client = Groq(api_key=GROQ_API_KEY)
+        
+    except Exception as e:
+        print(f"WARNING: Client failed to initialize: {e}")
 
+# ----------- File readers -----------
 def extract_text_from_pdf(file_path: str) -> str:
     text = []
     try:
@@ -57,7 +68,7 @@ def extract_text_from_image(file_path: str) -> str:
     img = Image.open(file_path)
     return pytesseract.image_to_string(img)
 
-# --- New Function to handle Markdown and HTML ---
+# --- Function to handle Markdown and HTML ---
 def extract_text_from_markdown_html(file_path: str) -> str:
     with open(file_path, "r", encoding="utf-8") as f:
         content = f.read()
@@ -80,69 +91,88 @@ try:
     print(f"DEBUG: Successfully loaded local AI model from {MODEL_PATH}")
 except IOError:
     print(f"ERROR: Could not load model from {MODEL_PATH}.")
-    print("Did you run the 'train.py' script first?")
 except ImportError:
-    print("ERROR: spaCy not found. Please run 'pip install spacy'")
+    print("ERROR: spaCy not found.")
 
 
 # ---------------------------------------------------------
-# --- 🤖 AI Clause segmentation (REPLACED Regex) ---
+# --- Hybrid Clause segmentation ---
 # ---------------------------------------------------------
 def split_into_clauses(text: str) -> List[Dict]:
     """
-    Splits a document's text into clauses using our custom-trained
-    local spaCy model.
+    Splits a document's text into clauses.
+    
     """
-    if not NLP:
-        print("ERROR: AI Model (NLP) is not loaded. Cannot split clauses.")
-        return [{"clause_id": "ERROR: Model not loaded", "text": text}]
-        
-    if not text or text.isspace():
-        return []
-
-    print("DEBUG: Starting AI clause segmentation...")
-    doc = NLP(text)
     
-    # Get the *start positions* of all detected clause headings
-    clause_starts = [ent.start_char for ent in doc.ents if ent.label_ == "CLAUSE_START"]
-    clause_starts.sort()
-
+    
     clauses = []
-    
-    if not clause_starts:
-        # No clauses found, return all text as one blob
-        return [{"clause_id": "Unknown", "text": text.strip()}]
+    if NLP and text and not text.isspace():
+        # print("DEBUG: Running local spaCy segmentation...") 
+        doc = NLP(text)
+        clause_starts = [ent.start_char for ent in doc.ents if ent.label_ == "CLAUSE_START"]
+        clause_starts.sort()
 
-    # 1. Handle Preamble (text before the first clause)
-    if clause_starts[0] > 0:
-        preamble_text = text[:clause_starts[0]].strip()
-        if preamble_text:
-            clauses.append({"clause_id": "Preamble", "text": preamble_text})
-
-    # 2. Loop through all found clauses
-    for i in range(len(clause_starts)):
-        start_char = clause_starts[i]
-        
-        # Determine the end of the clause
-        if i + 1 < len(clause_starts):
-            # End is the start of the next clause
-            end_char = clause_starts[i+1]
+        if not clause_starts:
+            clauses = [{"clause_id": "Unknown", "text": text.strip()}]
         else:
-            # This is the last clause, so it goes to the end of the text
-            end_char = len(text)
+            if clause_starts[0] > 0:
+                clauses.append({"clause_id": "Preamble", "text": text[:clause_starts[0]].strip()})
+            for i in range(len(clause_starts)):
+                start = clause_starts[i]
+                end = clause_starts[i+1] if i + 1 < len(clause_starts) else len(text)
+                txt = text[start:end].strip()
+                if txt:
+                    clauses.append({"clause_id": txt.split('\n', 1)[0].strip(), "text": txt})
+    
+    
+    if groq_client:
+        
+        try:
             
-        # Get the full text of this clause
-        clause_text_full = text[start_char:end_char].strip()
-        
-        if not clause_text_full:
-            continue
+            prompt = f"""
+            Extract legal clauses from the text below.
+            Output ONLY a JSON list of objects. Format: {{"clause_id": "Title/Number", "text": "Content"}}
+            
+            TEXT:
+            {text[:25000]} 
+            """
+            
+            completion = groq_client.chat.completions.create(
+                model="llama-3.1-8b-instant",
+                messages=[
+                    {"role": "system", "content": "You are a legal extraction API. Output strictly valid JSON."},
+                    {"role": "user", "content": prompt}
+                ],
+                temperature=0.1,
+                response_format={"type": "json_object"}
+            )
+            
+            
+            ai_content = completion.choices[0].message.content
+            ai_data = json.loads(ai_content)
+            
+            
+            final_clauses = []
+            if isinstance(ai_data, list):
+                final_clauses = ai_data
+            elif isinstance(ai_data, dict):
+                
+                for k in ["clauses", "data", "result"]:
+                    if k in ai_data:
+                        final_clauses = ai_data[k]
+                        break
+                if not final_clauses:
 
-        # Try to find the clause_id (the first line)
-        first_line = clause_text_full.split('\n', 1)[0].strip()
-        
-        clauses.append({"clause_id": first_line, "text": clause_text_full})
+                    final_clauses = [ai_data]
 
-    print(f"DEBUG: Found {len(clauses)} clauses.")
+            print(f"DEBUG: spaCy returned {len(final_clauses)} clauses.")
+            return final_clauses
+
+        except Exception as e:
+            print(f"ERROR: Falling back to local spaCy output.")
+            
+            pass
+
     return clauses
 
 # ----------- Main function -----------
