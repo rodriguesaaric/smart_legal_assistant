@@ -1,0 +1,2626 @@
+
+========================================================================
+  Run #1  |  2026-04-08 23:19:55
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Benchmark Evaluation
+  User Type:    CONSUMER
+  Total Clauses: 40  |  Substantive: 39  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):    15    |  False Positives (FP):     0
+    True Negatives  (TN):    23    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9500  (95.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.8824  (88.2%)
+    F1 Score:    0.9375  (93.8%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:  15
+    [LOW]    Low Risk:     25
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.64 ms
+    Scoring (7-head):    18.95 ms
+    Classification:       1.70 ms
+    Total Pipeline:      26.31 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: The Company may terminate this Agreement at any time without prior not...
+    [MEDIUM] malicious_intent: The Company reserves the right to modify these terms without notice. C...
+    [MEDIUM] malicious_intent: All disputes shall be resolved through mandatory binding arbitration. ...
+    [MEDIUM] malicious_intent: The Organizer hereby agrees to indemnify, defend and hold harmless the...
+    [MEDIUM] malicious_intent: The Brand reserves the right to disallow such additional content if no...
+    [MEDIUM] malicious_intent: Any additional content created by the Organising Committee will requir...
+    [MEDIUM] malicious_intent: No other sponsor's audio-visual content shall be displayed at the Venu...
+    [MEDIUM] malicious_intent: There shall be no branding on the three audience-facing sides of the v...
+    [MEDIUM] malicious_intent: All attendees shall be required to register through the Brand's offici...
+    [MEDIUM] malicious_intent: The Company shall have sole discretion to determine whether the Contra...
+    [MEDIUM] malicious_intent: The Provider waives all rights to pursue legal action against the Comp...
+    [MEDIUM] ambiguity: All intellectual property rights created during the engagement shall b...
+    [MEDIUM] malicious_intent: The Contractor agrees that the Company shall not be liable for any ind...
+    [MEDIUM] malicious_intent: The stage shall be exclusively branded by the Brand, with no branding ...
+    [MEDIUM] ambiguity: Confidential information shall not be disclosed to any third party wit...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #2  |  2026-04-08 23:20:34
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     3
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6250  (62.5%)
+    F1 Score:    0.7692  (76.9%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   5
+    [LOW]    Low Risk:     10
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           6.48 ms
+    Scoring (7-head):    11.53 ms
+    Classification:       1.55 ms
+    Total Pipeline:      19.57 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [MEDIUM] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [MEDIUM] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #3  |  2026-04-08 23:22:06
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    CONSUMER
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     3
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6250  (62.5%)
+    F1 Score:    0.7692  (76.9%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   5
+    [LOW]    Low Risk:     10
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           6.15 ms
+    Scoring (7-head):    13.78 ms
+    Classification:       2.43 ms
+    Total Pipeline:      22.40 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [MEDIUM] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [MEDIUM] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #4  |  2026-04-08 23:29:07
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     3
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6250  (62.5%)
+    F1 Score:    0.7692  (76.9%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   5
+    [LOW]    Low Risk:     10
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           7.24 ms
+    Scoring (7-head):    12.24 ms
+    Classification:       3.03 ms
+    Total Pipeline:      22.53 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [MEDIUM] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [MEDIUM] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #5  |  2026-04-08 23:36:43
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     3
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6250  (62.5%)
+    F1 Score:    0.7692  (76.9%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   5
+    [LOW]    Low Risk:     10
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          11.86 ms
+    Scoring (7-head):    16.10 ms
+    Classification:       1.68 ms
+    Total Pipeline:      29.66 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [MEDIUM] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [MEDIUM] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #6  |  2026-04-09 12:23:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Consumer SaaS Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   6
+    [LOW]    Low Risk:      4
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.52 ms
+    Scoring (7-head):     5.33 ms
+    Classification:       0.71 ms
+    Total Pipeline:      11.57 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: The Provider shall not be liable for any indirect, incidental, or cons...
+    [MEDIUM] malicious_intent: The Provider does not guarantee uninterrupted access and may suspend s...
+    [MEDIUM] malicious_intent: The Provider reserves the right to suspend or terminate accounts that ...
+    [MEDIUM] ambiguity: The Provider may modify this Agreement at any time without notifying t...
+    [MEDIUM] malicious_intent: The Consumer agrees to resolve all disputes through binding arbitratio...
+    [MEDIUM] malicious_intent: Subscriptions will automatically renew for a minimum of 12 months, and...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #7  |  2026-04-09 12:23:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Brand Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 11  |  Substantive: 11  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     1
+    True Negatives  (TN):     4    |  False Negatives (FN):     1
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8182  (81.8%)
+    Precision:   0.8333  (83.3%)
+    Recall:      0.8333  (83.3%)
+    F1 Score:    0.8333  (83.3%)
+    Specificity: 0.8000  (80.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      5
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.29 ms
+    Scoring (7-head):     6.16 ms
+    Classification:       0.98 ms
+    Total Pipeline:      11.44 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: The Brand's logo shall be incorporated into the Integrated Logo Unit o...
+    [  HIGH] malicious_intent: All social media content and releases related to the Sponsored Pronigh...
+    [  HIGH] malicious_intent: All attendees of the Event including students from the host institutio...
+    [  HIGH] malicious_intent: The stage shall be exclusively branded by the Brand, with no branding ...
+    [MEDIUM] malicious_intent: No other sponsor's audio-visual content shall be displayed at the Venu...
+    [  HIGH] malicious_intent: There shall be no branding on the three audience-facing sides of the v...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #8  |  2026-04-09 12:27:54
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8667  (86.7%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.7500  (75.0%)
+    F1 Score:    0.8571  (85.7%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      9
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           9.30 ms
+    Scoring (7-head):    14.78 ms
+    Classification:       2.40 ms
+    Total Pipeline:      26.52 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #9  |  2026-04-09 12:40:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8667  (86.7%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.7500  (75.0%)
+    F1 Score:    0.8571  (85.7%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      9
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          15.23 ms
+    Scoring (7-head):    10.50 ms
+    Classification:       2.30 ms
+    Total Pipeline:      28.05 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #10  |  2026-04-09 12:44:32
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8667  (86.7%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.7500  (75.0%)
+    F1 Score:    0.8571  (85.7%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      9
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           8.81 ms
+    Scoring (7-head):    11.24 ms
+    Classification:       2.19 ms
+    Total Pipeline:      22.27 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #11  |  2026-04-09 12:45:03
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.60 ms
+    Scoring (7-head):     8.30 ms
+    Classification:       0.70 ms
+    Total Pipeline:      13.62 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #12  |  2026-04-09 12:51:19
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          34.00 ms
+    Scoring (7-head):    80.24 ms
+    Classification:      12.43 ms
+    Total Pipeline:     126.69 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #13  |  2026-04-09 12:52:12
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    CONSUMER
+  Total Clauses: 15  |  Substantive: 15  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     7    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8667  (86.7%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.7500  (75.0%)
+    F1 Score:    0.8571  (85.7%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      9
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.46 ms
+    Scoring (7-head):    13.77 ms
+    Classification:       1.82 ms
+    Total Pipeline:      21.08 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: 6. All social media content and releases related to the Sponsored Pron...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [MEDIUM] malicious_intent: 8.1. While the final artist lineup is yet to be confirmed, it is agree...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #14  |  2026-04-09 12:52:50
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          31.82 ms
+    Scoring (7-head):    59.80 ms
+    Classification:      10.31 ms
+    Total Pipeline:     101.94 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #15  |  2026-04-09 12:54:23
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship  Agreement
+  User Type:    COMPANY
+  Total Clauses: 81  |  Substantive: 60  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=20, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     7    |  False Positives (FP):     2
+    True Negatives  (TN):    68    |  False Negatives (FN):     4
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9259  (92.6%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.6364  (63.6%)
+    F1 Score:    0.7000  (70.0%)
+    Specificity: 0.9714  (97.1%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     5
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     72
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          27.49 ms
+    Scoring (7-head):    58.23 ms
+    Classification:      10.25 ms
+    Total Pipeline:      96.01 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #16  |  2026-04-09 14:14:16
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:         101.86 ms
+    Scoring (7-head):   231.30 ms
+    Classification:      38.21 ms
+    Total Pipeline:     371.41 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #17  |  2026-04-09 14:17:27
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 81  |  Substantive: 60  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=20, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     7    |  False Positives (FP):     2
+    True Negatives  (TN):    68    |  False Negatives (FN):     4
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9259  (92.6%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.6364  (63.6%)
+    F1 Score:    0.7000  (70.0%)
+    Specificity: 0.9714  (97.1%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     5
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     72
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:         107.43 ms
+    Scoring (7-head):   262.74 ms
+    Classification:      36.96 ms
+    Total Pipeline:     407.18 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #18  |  2026-04-09 15:28:09
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Untitled
+  User Type:    CONSUMER
+  Total Clauses: 37  |  Substantive: 33  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=4, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     0    |  False Positives (FP):     0
+    True Negatives  (TN):    37    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   0.0000  (0.0%)
+    Recall:      0.0000  (0.0%)
+    F1 Score:    0.0000  (0.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   0
+    [LOW]    Low Risk:     37
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:         104.22 ms
+    Scoring (7-head):   123.03 ms
+    Classification:       8.18 ms
+    Total Pipeline:     235.90 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    (none)
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #19  |  2026-04-09 15:52:42
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:         114.42 ms
+    Scoring (7-head):   326.38 ms
+    Classification:      44.56 ms
+    Total Pipeline:     485.41 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #20  |  2026-04-09 20:36:53
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          18.16 ms
+    Scoring (7-head):    28.36 ms
+    Classification:       2.84 ms
+    Total Pipeline:      49.39 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #21  |  2026-04-15 14:06:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          47.39 ms
+    Scoring (7-head):    85.25 ms
+    Classification:      14.59 ms
+    Total Pipeline:     147.25 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #22  |  2026-04-15 14:28:05
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          29.59 ms
+    Scoring (7-head):    59.81 ms
+    Classification:      10.72 ms
+    Total Pipeline:     100.15 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #23  |  2026-04-15 14:29:12
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           7.55 ms
+    Scoring (7-head):     8.07 ms
+    Classification:       1.76 ms
+    Total Pipeline:      17.44 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #24  |  2026-04-15 14:53:07
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          29.55 ms
+    Scoring (7-head):    61.11 ms
+    Classification:      10.86 ms
+    Total Pipeline:     101.55 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #25  |  2026-04-15 14:58:38
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          30.22 ms
+    Scoring (7-head):    60.53 ms
+    Classification:      10.91 ms
+    Total Pipeline:     101.69 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #26  |  2026-04-15 15:17:29
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          36.05 ms
+    Scoring (7-head):    79.03 ms
+    Classification:      13.80 ms
+    Total Pipeline:     128.93 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #27  |  2026-04-15 15:34:44
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          29.47 ms
+    Scoring (7-head):    65.18 ms
+    Classification:      10.64 ms
+    Total Pipeline:     105.31 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #28  |  2026-04-15 15:36:24
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.40 ms
+    Scoring (7-head):     6.77 ms
+    Classification:       1.13 ms
+    Total Pipeline:      13.32 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #29  |  2026-04-15 15:40:32
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.64 ms
+    Scoring (7-head):     9.57 ms
+    Classification:       1.06 ms
+    Total Pipeline:      16.30 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #30  |  2026-04-15 15:41:09
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          31.34 ms
+    Scoring (7-head):    92.04 ms
+    Classification:      18.14 ms
+    Total Pipeline:     141.54 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #31  |  2026-04-15 15:47:10
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 81  |  Substantive: 60  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=20, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     7    |  False Positives (FP):     2
+    True Negatives  (TN):    68    |  False Negatives (FN):     4
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9259  (92.6%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.6364  (63.6%)
+    F1 Score:    0.7000  (70.0%)
+    Specificity: 0.9714  (97.1%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     5
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     72
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          37.44 ms
+    Scoring (7-head):    78.25 ms
+    Classification:      13.26 ms
+    Total Pipeline:     128.96 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #32  |  2026-04-15 15:49:27
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.83 ms
+    Scoring (7-head):     7.32 ms
+    Classification:       0.81 ms
+    Total Pipeline:      12.99 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #33  |  2026-04-15 16:14:35
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.92 ms
+    Scoring (7-head):     7.92 ms
+    Classification:       1.97 ms
+    Total Pipeline:      15.84 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #34  |  2026-04-15 16:21:19
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.87 ms
+    Scoring (7-head):     5.61 ms
+    Classification:       1.02 ms
+    Total Pipeline:      11.52 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #35  |  2026-04-15 16:26:43
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.05 ms
+    Scoring (7-head):     6.11 ms
+    Classification:       0.79 ms
+    Total Pipeline:      11.97 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #36  |  2026-04-15 16:28:24
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          43.50 ms
+    Scoring (7-head):    79.71 ms
+    Classification:      15.55 ms
+    Total Pipeline:     138.79 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #37  |  2026-04-15 22:27:37
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          35.59 ms
+    Scoring (7-head):    79.73 ms
+    Classification:      11.48 ms
+    Total Pipeline:     126.85 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #38  |  2026-04-15 22:53:57
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 81  |  Substantive: 60  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=20, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     7    |  False Positives (FP):     2
+    True Negatives  (TN):    68    |  False Negatives (FN):     4
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9259  (92.6%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.6364  (63.6%)
+    F1 Score:    0.7000  (70.0%)
+    Specificity: 0.9714  (97.1%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     5
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     72
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          69.71 ms
+    Scoring (7-head):   108.48 ms
+    Classification:      15.61 ms
+    Total Pipeline:     193.83 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #39  |  2026-04-16 09:31:18
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          62.93 ms
+    Scoring (7-head):    74.85 ms
+    Classification:      12.85 ms
+    Total Pipeline:     150.66 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #40  |  2026-04-16 10:06:10
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          53.34 ms
+    Scoring (7-head):     8.85 ms
+    Classification:       1.18 ms
+    Total Pipeline:      65.34 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #41  |  2026-04-16 10:08:39
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Nitte Alumni Agreement
+  User Type:    CONSUMER
+  Total Clauses: 49  |  Substantive: 48  |  Standard: 0
+  Skipped:      Definitions=1, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):    20    |  False Positives (FP):     6
+    True Negatives  (TN):    20    |  False Negatives (FN):     3
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8163  (81.6%)
+    Precision:   0.7692  (76.9%)
+    Recall:      0.8696  (87.0%)
+    F1 Score:    0.8163  (81.6%)
+    Specificity: 0.7692  (76.9%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     9
+    [MED]    Medium Risk:  17
+    [LOW]    Low Risk:     23
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:         350.68 ms
+    Scoring (7-head):    51.54 ms
+    Classification:      13.02 ms
+    Total Pipeline:     415.26 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: PROVISION OF THE SERVICES BEING OFFERED BY NITTE
+NITTE is constantly ...
+    [MEDIUM] ambiguity: In creating an account, you represent to us that all information provi...
+    [MEDIUM] malicious_intent: By creating an account, you agree to receive certain communications in...
+    [MEDIUM] ambiguity: You agree that you will not engage in any activity that interferes wit...
+    [MEDIUM] malicious_intent: If transaction is failed but amount is deducted from your account
+Amo...
+    [MEDIUM] malicious_intent: You also understand that in case, the content is found inappropriate f...
+    [  HIGH] malicious_intent: Content Removal
+We reserve the right, at any time and without prior n...
+    [  HIGH] malicious_intent: Third Party Content and Links
+Some of the content available through t...
+    [MEDIUM] malicious_intent: Third party content, including that posted by our users, does not refl...
+    [MEDIUM] malicious_intent: User posts/content
+User posts/content do not reflect the opinion of N...
+    [MEDIUM] malicious_intent: RESTRICTIONS ON USE
+Without limiting the generality of these Terms, i...
+    [MEDIUM] malicious_intent: Violate our Guidelines and Policies;
+Is harmful, threatening, abusive...
+    [MEDIUM] ambiguity: Any Content uploaded by you, shall be subject to relevant laws of Indi...
+    [  HIGH] malicious_intent: USER FEEDBACK
+If you share or send any ideas, suggestions, changes or...
+    [MEDIUM] ambiguity: ADVERTISING
+Part of the site may contain advertising information or p...
+    [MEDIUM] malicious_intent: DISCLAIMER OF WARRANTIES, LIMITATION OF LIABILITY, AND INDEMNIFICATION...
+    [MEDIUM] ambiguity: Limitation of Liability
+TO THE FULLEST EXTENT PERMITTED BY APPLICABLE...
+    [MEDIUM] ambiguity: Some countries and jurisdictions do not allow the limitation or exclus...
+    [  HIGH] malicious_intent: Indemnification
+You agree to indemnify, defend, and hold harmless the...
+    [  HIGH] malicious_intent: We may terminate your use of the Services and deny you access to the S...
+    [  HIGH] malicious_intent: Entire Agreement and Waiver: The Terms, together with the ‘Privacy Pol...
+    [  HIGH] malicious_intent: Governing Law/Waiver:
+For all Users: YOU MUST COMMENCE ANY LEGAL ACTI...
+    [MEDIUM] ambiguity: Carrier Rates may Apply: By accessing the Services through a mobile or...
+    [MEDIUM] malicious_intent: Linking and Framing: You may not frame the Services. You may link to t...
+    [  HIGH] malicious_intent: NOTICE OF COPYRIGHT INFRINGEMENT AND GRIEVANCE REDRESSAL MECHANISM
+NI...
+    [MEDIUM] malicious_intent: Identify in writing the copyrighted material that you claim has been i...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #42  |  2026-04-16 10:14:19
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          37.59 ms
+    Scoring (7-head):    95.87 ms
+    Classification:      12.96 ms
+    Total Pipeline:     146.43 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #43  |  2026-04-16 13:41:37
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship AGreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          46.95 ms
+    Scoring (7-head):    72.45 ms
+    Classification:      11.98 ms
+    Total Pipeline:     131.40 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #44  |  2026-04-16 13:43:31
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Service Agreemeent
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     2
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8000  (80.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      0.6667  (66.7%)
+    F1 Score:    0.8000  (80.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:      6
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.50 ms
+    Scoring (7-head):     7.28 ms
+    Classification:       0.66 ms
+    Total Pipeline:      12.45 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 4. The Provider shall not be liable for any indirect, incidental, or c...
+    [MEDIUM] malicious_intent: 5. The Provider does not guarantee uninterrupted access and may suspen...
+    [MEDIUM] malicious_intent: 6. The Provider reserves the right to suspend or terminate accounts th...
+    [MEDIUM] malicious_intent: 9. The Consumer agrees to resolve all disputes through binding arbitra...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #45  |  2026-05-19 11:57:26
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          31.22 ms
+    Scoring (7-head):    75.04 ms
+    Classification:      11.86 ms
+    Total Pipeline:     118.16 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #46  |  2026-05-19 13:35:54
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          41.17 ms
+    Scoring (7-head):    87.21 ms
+    Classification:      14.45 ms
+    Total Pipeline:     142.87 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #47  |  2026-05-19 13:59:37
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 86  |  Substantive: 63  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=22, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     9    |  False Positives (FP):     2
+    True Negatives  (TN):    69    |  False Negatives (FN):     6
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9070  (90.7%)
+    Precision:   0.8182  (81.8%)
+    Recall:      0.6000  (60.0%)
+    F1 Score:    0.6923  (69.2%)
+    Specificity: 0.9718  (97.2%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     7
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     75
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          45.11 ms
+    Scoring (7-head):    81.72 ms
+    Classification:      13.01 ms
+    Total Pipeline:     139.87 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 8. All attendees of the Event including students from the host institu...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+    [  HIGH] malicious_intent: 9.5 There shall be no branding on the three audience-facing sides of t...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #48  |  2026-05-19 14:08:33
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 81  |  Substantive: 60  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=20, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     7    |  False Positives (FP):     2
+    True Negatives  (TN):    68    |  False Negatives (FN):     4
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.9259  (92.6%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.6364  (63.6%)
+    F1 Score:    0.7000  (70.0%)
+    Specificity: 0.9714  (97.1%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     5
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     72
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          33.58 ms
+    Scoring (7-head):    63.26 ms
+    Classification:      11.07 ms
+    Total Pipeline:     107.93 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: d) Each Party shall use the other Party's Marks solely in accordance w...
+    [MEDIUM] ambiguity: b) In the event of any of the Parties becoming legally compelled to di...
+    [MEDIUM] ambiguity: a) Termination of this Agreement for any reason shall not release eith...
+    [  HIGH] malicious_intent: a) Organizer hereby agrees to indemnify, defend and hold harmless Agen...
+    [  HIGH] malicious_intent: b) The Organizer agrees and undertakes that in the event of breach of ...
+    [  HIGH] malicious_intent: c) The Organizer agrees and undertakes that the Organizer will be resp...
+    [  HIGH] malicious_intent: c) No amendment to or modification of or rescission, termination or di...
+    [  HIGH] malicious_intent: 9.3 The stage shall be exclusively branded by the Brand, with no brand...
+    [MEDIUM] malicious_intent: 9.4 Additionally, no other sponsor’s audio-visual content shall be dis...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #49  |  2026-05-19 14:15:23
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     IT Policy
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 9  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=1, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     1    |  False Positives (FP):     0
+    True Negatives  (TN):     9    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   1
+    [LOW]    Low Risk:      9
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          10.01 ms
+    Scoring (7-head):     9.83 ms
+    Classification:       2.47 ms
+    Total Pipeline:      22.32 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 5. Access Controls, Account (Policy)
+To maintain Network performance, ...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #50  |  2026-05-19 14:20:36
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Professional Services Agreement
+  User Type:    COMPANY
+  Total Clauses: 43  |  Substantive: 37  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=5, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):    39    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     2
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:     39
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          36.46 ms
+    Scoring (7-head):    47.64 ms
+    Classification:       9.21 ms
+    Total Pipeline:      93.32 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [  HIGH] malicious_intent: 5. INDEMNIFICATION FOR DAMAGES, TAXES AND CONTRIBUTIONS.
+CONSULTANT sh...
+    [MEDIUM] malicious_intent: 15. WORK PRODUCTS. All material, data, information, and written, graph...
+    [MEDIUM] ambiguity: C. There shall be no change in the CONSULTANT’s Project Manager or mem...
+    [  HIGH] malicious_intent: C. COMPLETE AGREEMENT, INCLUDING ATTACHMENTS. This Agreement includes ...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #51  |  2026-05-19 14:21:42
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Hall Agreement
+  User Type:    CONSUMER
+  Total Clauses: 156  |  Substantive: 146  |  Standard: 0
+  Skipped:      Definitions=6, Addresses=3, Boilerplate=1
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):    14    |  False Positives (FP):     4
+    True Negatives  (TN):   125    |  False Negatives (FN):    13
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8910  (89.1%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.5185  (51.9%)
+    F1 Score:    0.6222  (62.2%)
+    Specificity: 0.9690  (96.9%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:  14
+    [LOW]    Low Risk:    138
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          44.33 ms
+    Scoring (7-head):   116.19 ms
+    Classification:      23.95 ms
+    Total Pipeline:     184.49 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 3.2 The HEC shall provide a menu to the service provider, which shall ...
+    [MEDIUM] ambiguity: 3.5 The service provider shall ensure that sufficient care is taken on...
+    [  HIGH] malicious_intent: 3.9 The service provider shall procure only good quality fresh vegetab...
+    [MEDIUM] malicious_intent: 3.15 The HEC reserves the right to check the attendance of the mess wo...
+    [MEDIUM] ambiguity: 3.26 The waste material and unused/leftover food from mess shall be re...
+    [MEDIUM] ambiguity: 3.27 Any complaint relating to the raw material, preparation of food, ...
+    [MEDIUM] ambiguity: 3.28 The hostel may celebrate a “Hall Day” once every year. The servic...
+    [MEDIUM] malicious_intent: 4.5 In case, the Institute suffers loss of any nature on account of th...
+    [  HIGH] malicious_intent: 4.7 The service provider's staff shall not be treated as the Institute...
+    [MEDIUM] malicious_intent: 4.8 The service provider shall be responsible for fulfilling the requi...
+    [  HIGH] malicious_intent: 4.10 The service provider shall, at his own expense, take workman's
+co...
+    [MEDIUM] ambiguity: 4.13 The replacement of electrical items, such as bulbs, tubes, etc., ...
+    [MEDIUM] ambiguity: 4.16 The service provider shall make his own arrangement for the trans...
+    [MEDIUM] ambiguity: f) fails to facilitate procurement of sufficient/suitable raw material...
+    [MEDIUM] ambiguity: 7.7 Schedule of Rates to be Inclusive:
+The prices/rates accepted by th...
+    [MEDIUM] ambiguity: 7.8 Receipts for Payment:
+The receipt for payment made on account of t...
+    [  HIGH] malicious_intent: 7.10 Accident or Injury to Workman:
+The Institute shall not be liable ...
+    [MEDIUM] malicious_intent: c) The service provider shall at his own expense comply with all labou...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+========================================================================
+  Run #52  |  2026-05-19 14:24:47
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Professonal Services Agreement
+  User Type:    CONSUMER
+  Total Clauses: 43  |  Substantive: 37  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=5, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     4    |  False Positives (FP):     0
+    True Negatives  (TN):    39    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   4
+    [LOW]    Low Risk:     39
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          22.27 ms
+    Scoring (7-head):    35.78 ms
+    Classification:       7.12 ms
+    Total Pipeline:      65.19 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 5. INDEMNIFICATION FOR DAMAGES, TAXES AND CONTRIBUTIONS.
+CONSULTANT sh...
+    [MEDIUM] malicious_intent: 15. WORK PRODUCTS. All material, data, information, and written, graph...
+    [MEDIUM] ambiguity: C. There shall be no change in the CONSULTANT’s Project Manager or mem...
+    [MEDIUM] malicious_intent: C. COMPLETE AGREEMENT, INCLUDING ATTACHMENTS. This Agreement includes ...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #53  |  2026-05-19 14:26:34
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Hall agreement
+  User Type:    CONSUMER
+  Total Clauses: 156  |  Substantive: 146  |  Standard: 0
+  Skipped:      Definitions=6, Addresses=3, Boilerplate=1
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):    14    |  False Positives (FP):     4
+    True Negatives  (TN):   125    |  False Negatives (FN):    13
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8910  (89.1%)
+    Precision:   0.7778  (77.8%)
+    Recall:      0.5185  (51.9%)
+    F1 Score:    0.6222  (62.2%)
+    Specificity: 0.9690  (96.9%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:  18
+    [LOW]    Low Risk:    138
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          48.02 ms
+    Scoring (7-head):   124.67 ms
+    Classification:      19.75 ms
+    Total Pipeline:     192.47 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 3.2 The HEC shall provide a menu to the service provider, which shall ...
+    [MEDIUM] ambiguity: 3.5 The service provider shall ensure that sufficient care is taken on...
+    [MEDIUM] malicious_intent: 3.9 The service provider shall procure only good quality fresh vegetab...
+    [MEDIUM] malicious_intent: 3.15 The HEC reserves the right to check the attendance of the mess wo...
+    [MEDIUM] ambiguity: 3.26 The waste material and unused/leftover food from mess shall be re...
+    [MEDIUM] ambiguity: 3.27 Any complaint relating to the raw material, preparation of food, ...
+    [MEDIUM] ambiguity: 3.28 The hostel may celebrate a “Hall Day” once every year. The servic...
+    [MEDIUM] malicious_intent: 4.5 In case, the Institute suffers loss of any nature on account of th...
+    [MEDIUM] malicious_intent: 4.7 The service provider's staff shall not be treated as the Institute...
+    [MEDIUM] malicious_intent: 4.8 The service provider shall be responsible for fulfilling the requi...
+    [MEDIUM] malicious_intent: 4.10 The service provider shall, at his own expense, take workman's
+co...
+    [MEDIUM] ambiguity: 4.13 The replacement of electrical items, such as bulbs, tubes, etc., ...
+    [MEDIUM] ambiguity: 4.16 The service provider shall make his own arrangement for the trans...
+    [MEDIUM] ambiguity: f) fails to facilitate procurement of sufficient/suitable raw material...
+    [MEDIUM] ambiguity: 7.7 Schedule of Rates to be Inclusive:
+The prices/rates accepted by th...
+    [MEDIUM] ambiguity: 7.8 Receipts for Payment:
+The receipt for payment made on account of t...
+    [MEDIUM] malicious_intent: 7.10 Accident or Injury to Workman:
+The Institute shall not be liable ...
+    [MEDIUM] malicious_intent: c) The service provider shall at his own expense comply with all labou...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #54  |  2026-10-18 12:00:28
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Consumer SaaS Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   6
+    [LOW]    Low Risk:      4
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           7.72 ms
+    Scoring (7-head):     4.54 ms
+    Classification:       0.67 ms
+    Total Pipeline:      12.93 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: The Provider shall not be liable for any indirect, incidental, or cons...
+    [MEDIUM] malicious_intent: The Provider does not guarantee uninterrupted access and may suspend s...
+    [MEDIUM] malicious_intent: The Provider reserves the right to suspend or terminate accounts that ...
+    [MEDIUM] ambiguity: The Provider may modify this Agreement at any time without notifying t...
+    [MEDIUM] malicious_intent: The Consumer agrees to resolve all disputes through binding arbitratio...
+    [MEDIUM] malicious_intent: Subscriptions will automatically renew for a minimum of 12 months, and...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #55  |  2026-10-18 12:00:28
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Brand Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 11  |  Substantive: 11  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     1
+    True Negatives  (TN):     4    |  False Negatives (FN):     1
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8182  (81.8%)
+    Precision:   0.8333  (83.3%)
+    Recall:      0.8333  (83.3%)
+    F1 Score:    0.8333  (83.3%)
+    Specificity: 0.8000  (80.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   6
+    [LOW]    Low Risk:      5
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           3.41 ms
+    Scoring (7-head):     5.83 ms
+    Classification:       0.93 ms
+    Total Pipeline:      10.18 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: The Brand's logo shall be incorporated into the Integrated Logo Unit o...
+    [MEDIUM] malicious_intent: All social media content and releases related to the Sponsored Pronigh...
+    [MEDIUM] malicious_intent: All attendees of the Event including students from the host institutio...
+    [MEDIUM] malicious_intent: The stage shall be exclusively branded by the Brand, with no branding ...
+    [MEDIUM] malicious_intent: No other sponsor's audio-visual content shall be displayed at the Venu...
+    [MEDIUM] malicious_intent: There shall be no branding on the three audience-facing sides of the v...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+========================================================================
+  Run #56  |  2026-10-18 12:01:13
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Test Agreement
+  User Type:    CONSUMER
+  Total Clauses: 3  |  Substantive: 3  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     1    |  False Positives (FP):     0
+    True Negatives  (TN):     2    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   1
+    [LOW]    Low Risk:      2
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           2.81 ms
+    Scoring (7-head):     1.45 ms
+    Classification:       0.24 ms
+    Total Pipeline:       4.52 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 1. The Company may terminate this agreement at any time without notice...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #57  |  2026-10-18 12:10:27
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Test SaaS Agreement
+  User Type:    CONSUMER
+  Total Clauses: 4  |  Substantive: 3  |  Standard: 1
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     1    |  False Positives (FP):     0
+    True Negatives  (TN):     3    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   1
+    [LOW]    Low Risk:      3
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:          10.37 ms
+    Scoring (7-head):     2.17 ms
+    Classification:       0.32 ms
+    Total Pipeline:      12.88 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 3. Termination: The Company may terminate this contract at any time wi...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+
+
+========================================================================
+  Run #58  |  2026-10-18 12:11:15
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Uploaded Document
+  User Type:    COMPANY
+  Total Clauses: 3  |  Substantive: 3  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     1    |  False Positives (FP):     0
+    True Negatives  (TN):     2    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   1
+    [LOW]    Low Risk:      2
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           2.64 ms
+    Scoring (7-head):     1.52 ms
+    Classification:       0.25 ms
+    Total Pipeline:       4.42 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: 3. Sole Discretion: The Brand reserves the right to cancel events at i...
+------------------------------------------------------------------------
+  Overall Risk: LOW
+========================================================================
+

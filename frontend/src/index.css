@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 7%;
+    --foreground: 210 20% 90%;
+
+    --card: 220 18% 10%;
+    --card-foreground: 210 20% 90%;
+
+    --popover: 220 18% 10%;
+    --popover-foreground: 210 20% 90%;
+
+    --primary: 185 80% 50%;
+    --primary-foreground: 220 20% 7%;
+
+    --secondary: 220 15% 16%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 220 15% 14%;
+    --muted-foreground: 215 15% 50%;
+
+    --accent: 185 80% 50%;
+    --accent-foreground: 220 20% 7%;
+
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 185 80% 50%;
+
+    --radius: 0.5rem;
+
+    /* Custom tokens */
+    --risk-low: 145 65% 45%;
+    --risk-medium: 45 90% 55%;
+    --risk-high: 15 85% 55%;
+    --risk-critical: 0 72% 55%;
+
+    --glow-primary: 0 0 20px hsl(185 80% 50% / 0.3);
+    --glow-risk: 0 0 20px hsl(0 72% 55% / 0.3);
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 210 20% 90%;
+    --sidebar-primary: 185 80% 50%;
+    --sidebar-primary-foreground: 220 20% 7%;
+    --sidebar-accent: 220 15% 16%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 185 80% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
+
+/* Glow effects */
+.glow-primary {
+  box-shadow: var(--glow-primary);
+}
+.glow-risk {
+  box-shadow: var(--glow-risk);
+}
+
+/* Risk highlight styles */
+.risk-highlight {
+  @apply rounded px-0.5 py-0.5 cursor-pointer transition-all duration-200;
+}
+.risk-highlight-high {
+  background: hsl(var(--risk-high) / 0.2);
+  border-bottom: 2px solid hsl(var(--risk-high));
+}
+.risk-highlight-medium {
+  background: hsl(var(--risk-medium) / 0.15);
+  border-bottom: 2px solid hsl(var(--risk-medium));
+}
+.risk-highlight-low {
+  background: hsl(var(--risk-low) / 0.1);
+  border-bottom: 2px solid hsl(var(--risk-low));
+}

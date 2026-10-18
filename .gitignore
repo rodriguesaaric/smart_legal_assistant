@@ -1,11 +1,26 @@
-# Virtual Environment
+# Virtual Environments
 venv/
+.venv/
+
+# Dependencies & Build
+node_modules/
+dist/
 
 # Python cache
 __pycache__/
+*.py[cod]
 
 # Uploaded files from the service
 uploads/
 
 # Private environment variables
 .env
+.env.local
+
+# Large model files
+saved_model/
+*.safetensors
+*.bin
+
+# Logs
+*.log

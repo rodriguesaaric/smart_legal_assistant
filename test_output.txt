@@ -1,0 +1,129 @@
+﻿========================================================================
+  CONSUMER CONTRACT ANALYSIS
+========================================================================
+No labels provided ù using heuristics only.
+
+========================================================================
+  Run #6  |  2026-04-09 12:23:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Consumer SaaS Agreement
+  User Type:    CONSUMER
+  Total Clauses: 10  |  Substantive: 10  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     6    |  False Positives (FP):     0
+    True Negatives  (TN):     4    |  False Negatives (FN):     0
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    1.0000  (100.0%)
+    Precision:   1.0000  (100.0%)
+    Recall:      1.0000  (100.0%)
+    F1 Score:    1.0000  (100.0%)
+    Specificity: 1.0000  (100.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     0
+    [MED]    Medium Risk:   6
+    [LOW]    Low Risk:      4
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           5.52 ms
+    Scoring (7-head):     5.33 ms
+    Classification:       0.71 ms
+    Total Pipeline:      11.57 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] malicious_intent: The Provider shall not be liable for any indirect, incidental, or cons...
+    [MEDIUM] malicious_intent: The Provider does not guarantee uninterrupted access and may suspend s...
+    [MEDIUM] malicious_intent: The Provider reserves the right to suspend or terminate accounts that ...
+    [MEDIUM] ambiguity: The Provider may modify this Agreement at any time without notifying t...
+    [MEDIUM] malicious_intent: The Consumer agrees to resolve all disputes through binding arbitratio...
+    [MEDIUM] malicious_intent: Subscriptions will automatically renew for a minimum of 12 months, and...
+------------------------------------------------------------------------
+  Overall Risk: MEDIUM
+========================================================================
+
+
+  PER-CLAUSE RESULTS:
+    [LOW] S_doc=0.236 | Clause  1: The Provider agrees to offer access to its web-based platform for...
+    [LOW] S_doc=0.316 | Clause  2: The Consumer agrees to pay a monthly subscription fee of Rs.499. ...
+    [LOW] S_doc=0.297 | Clause  3: The Provider will collect and process user data in accordance wit...
+    [MED] S_doc=0.515 | Clause  4: The Provider shall not be liable for any indirect, incidental, or...
+    [MED] S_doc=0.557 | Clause  5: The Provider does not guarantee uninterrupted access and may susp...
+    [MED] S_doc=0.585 | Clause  6: The Provider reserves the right to suspend or terminate accounts ...
+    [MED] S_doc=0.466 | Clause  7: The Provider may modify this Agreement at any time without notify...
+    [LOW] S_doc=0.307 | Clause  8: All content uploaded by the Consumer becomes the property of the ...
+    [MED] S_doc=0.551 | Clause  9: The Consumer agrees to resolve all disputes through binding arbit...
+    [MED] S_doc=0.456 | Clause 10: Subscriptions will automatically renew for a minimum of 12 months...
+
+
+
+========================================================================
+  COMPANY SPONSORSHIP AGREEMENT ANALYSIS
+========================================================================
+No labels provided ù using heuristics only.
+
+========================================================================
+  Run #7  |  2026-04-09 12:23:58
+  ContractShield - Multi-Criteria Scoring Report
+========================================================================
+  Contract:     Brand Sponsorship Agreement
+  User Type:    COMPANY
+  Total Clauses: 11  |  Substantive: 11  |  Standard: 0
+  Skipped:      Definitions=0, Addresses=0, Boilerplate=0
+------------------------------------------------------------------------
+  CONFUSION MATRIX
+    True Positives  (TP):     5    |  False Positives (FP):     1
+    True Negatives  (TN):     4    |  False Negatives (FN):     1
+------------------------------------------------------------------------
+  CLASSIFICATION METRICS
+    Accuracy:    0.8182  (81.8%)
+    Precision:   0.8333  (83.3%)
+    Recall:      0.8333  (83.3%)
+    F1 Score:    0.8333  (83.3%)
+    Specificity: 0.8000  (80.0%)
+------------------------------------------------------------------------
+  RISK DISTRIBUTION
+    [HIGH]   High Risk:     4
+    [MED]    Medium Risk:   2
+    [LOW]    Low Risk:      5
+------------------------------------------------------------------------
+  TIMING
+    TF-IDF Fit:           4.29 ms
+    Scoring (7-head):     6.16 ms
+    Classification:       0.98 ms
+    Total Pipeline:      11.44 ms
+------------------------------------------------------------------------
+  CLAUSES FLAGGED:
+    [MEDIUM] ambiguity: The Brand's logo shall be incorporated into the Integrated Logo Unit o...
+    [  HIGH] malicious_intent: All social media content and releases related to the Sponsored Pronigh...
+    [  HIGH] malicious_intent: All attendees of the Event including students from the host institutio...
+    [  HIGH] malicious_intent: The stage shall be exclusively branded by the Brand, with no branding ...
+    [MEDIUM] malicious_intent: No other sponsor's audio-visual content shall be displayed at the Venu...
+    [  HIGH] malicious_intent: There shall be no branding on the three audience-facing sides of the v...
+------------------------------------------------------------------------
+  Overall Risk: HIGH
+========================================================================
+
+
+  PER-CLAUSE RESULTS:
+    [LOW] S_doc=0.372 | Clause  1: The Brand shall be promoted as the Title Sponsor of the Event org...
+    [MED] S_doc=0.506 | Clause  2: The Brand's logo shall be incorporated into the Integrated Logo U...
+    [LOW] S_doc=0.342 | Clause  3: All Event-related communication shall carry the mention: Brand pr...
+    [LOW] S_doc=0.411 | Clause  4: The Organising Committee shall ensure that the festival will not ...
+    [LOW] S_doc=0.273 | Clause  5: The festival will ensure the following dedicated social media col...
+    [HI!] S_doc=0.657 | Clause  6: All social media content and releases related to the Sponsored Pr...
+    [LOW] S_doc=0.376 | Clause  7: The Brand's logo shall be featured on the Festival's official spo...
+    [HI!] S_doc=0.547 | Clause  8: All attendees of the Event including students from the host insti...
+    [HI!] S_doc=0.637 | Clause  9: The stage shall be exclusively branded by the Brand, with no bran...
+    [MED] S_doc=0.630 | Clause 10: No other sponsor's audio-visual content shall be displayed at the...
+    [HI!] S_doc=0.598 | Clause 11: There shall be no branding on the three audience-facing sides of ...
+
+
+  === CLAUSE 8 DEEP DIVE ===
+  Severity: HIGH
+  S_doc:    0.547
+  Scores:   {'A': 0.7399000307241884, 'M': 0.9996646498695336, 'R': 0.5911771844660194, 'T': 0.55, 'I': 0.23147521650098238, 'F': 0.7, 'S': 0.5}
+  Reason:   This clause raises significant concerns due to:   ò a mandatory minimum performance target that creates binding financial or operational risk   ò a guaranteed minimum obligation ù failure to meet this could trigger breach of contract   ò a mandatory entry requirement that may restrict participant autonomy   ò a compulsory registration requirement tied to a third-party platform These provisions, taken together, create a substantial imbalance of power and may expose one party to undue risk.

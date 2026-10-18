@@ -1,0 +1,26 @@
+{
+  "document_name": "demo.txt",
+  "num_clauses": 5,
+  "clauses": [
+    {
+      "clause_id": "1. Definitions",
+      "text": "1. Definitions\nIn this Agreement, the following terms shall have the meanings assigned to them."
+    },
+    {
+      "clause_id": "1.1 Confidential Information",
+      "text": "1.1 Confidential Information\nThe parties agree to keep all proprietary information, trade secrets, and sensitive data strictly confidential."
+    },
+    {
+      "clause_id": "1.2 Termination",
+      "text": "1.2 Termination\nEither party may terminate this Agreement by providing thirty (30) days written notice to the other party."
+    },
+    {
+      "clause_id": "2. Governing Law",
+      "text": "2. Governing Law\nThis Agreement shall be governed by and construed in accordance with the laws of India."
+    },
+    {
+      "clause_id": "3. Limitation of Liability",
+      "text": "3. Limitation of Liability\nIn no event shall either party be liable for indirect, incidental, or consequential damages."
+    }
+  ]
+}

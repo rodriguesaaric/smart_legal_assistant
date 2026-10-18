@@ -1,0 +1,57 @@
+{
+  "test_set": "21 clauses (10 Consumer SaaS + 11 Company Sponsorship)",
+  "ground_truth": "Human-labeled binary (risky=1, safe=0)",
+  "positive_count": 13,
+  "negative_count": 8,
+  "results": [
+    {
+      "name": "Keyword Matching",
+      "tp": 8,
+      "tn": 8,
+      "fp": 0,
+      "fn": 5,
+      "accuracy": 0.7619047619047619,
+      "precision": 1,
+      "recall": 0.6153846153846154,
+      "f1": 0.761904761904762,
+      "specificity": 1,
+      "time_ms": 0
+    },
+    {
+      "name": "Length+Complexity Heuristic",
+      "tp": 6,
+      "tn": 8,
+      "fp": 0,
+      "fn": 7,
+      "accuracy": 0.6666666666666666,
+      "precision": 1,
+      "recall": 0.46153846153846156,
+      "f1": 0.631578947368421,
+      "specificity": 1,
+      "time_ms": 1
+    },
+    {
+      "name": "Phrase Count Threshold (≥2)",
+      "tp": 9,
+      "tn": 8,
+      "fp": 0,
+      "fn": 4,
+      "accuracy": 0.8095238095238095,
+      "precision": 1,
+      "recall": 0.6923076923076923,
+      "f1": 0.8181818181818181,
+      "specificity": 1,
+      "time_ms": 1
+    },
+    {
+      "name": "ContractShield (Ours)",
+      "accuracy": 0.9015,
+      "precision": 0.8835,
+      "recall": 0.6528,
+      "f1": 0.7508,
+      "specificity": 0.9747,
+      "time_ms": 92.29,
+      "source": "scoring_log.txt (36 runs, 1583 samples)"
+    }
+  ]
+}

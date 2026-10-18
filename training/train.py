@@ -1,92 +1,78 @@
-import spacy
-from spacy.tokens import DocBin
-from spacy.training import Example
-import json
-import random
-from pathlib import Path
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from torch.utils.data import DataLoader
+from transformers import AutoModelForTokenClassification
+from torch.optim import AdamW
+import os
+from dataset import prepare_dataloaders
 
-def train_spacy_model(
-    data_path=Path(__file__).parent / "train.json",
-    model_output_dir=Path(__file__).parent / "clause-model",
-    base_model="en_core_web_sm"
-):
-    """
-    Trains a spaCy NER model by updating a pre-trained model.
+class FocalLoss(nn.Module):
     
-    """
-    print("Starting model training...")
+    def __init__(self, alpha=0.25, gamma=2.0, reduction='mean'):
+        super(FocalLoss, self).__init__()
+        self.alpha = alpha
+        self.gamma = gamma 
+        self.reduction = reduction
 
-    # 1. Load the base model
-    try:
-        nlp = spacy.load(base_model)
-        print(f"Loaded base model '{base_model}'")
-    except IOError:
-        print(f"Error: Base model '{base_model}' not found.")
-        print(f"Run: python -m spacy download {base_model}")
-        return
-
-    # 2. Load your training data
-    with open(data_path, 'r', encoding='utf-8') as f:
-        TRAIN_DATA = json.load(f)
-
-    # 3. Add the NER (Named Entity Recognizer) to the pipeline
-    if "ner" not in nlp.pipe_names:
-        ner = nlp.add_pipe("ner", last=True)
-    else:
-        ner = nlp.get_pipe("ner")
+    def forward(self, inputs, targets):
     
-    # Add our new label "CLAUSE_START"
-    ner.add_label("CLAUSE_START")
+        ce_loss = F.cross_entropy(inputs, targets, reduction='none')
+        pt = torch.exp(-ce_loss)
+        focal_loss = self.alpha * (1 - pt)**self.gamma * ce_loss
 
-    # 4. Convert data to spaCy's format
-    db = DocBin()
-    examples = []
-    print("Processing training data...")
-    for text, annots in TRAIN_DATA:
-        try:
-            doc = nlp.make_doc(text)
-            ents = []
-            for start, end, label in annots["entities"]:
-                span = doc.char_span(start, end, label=label)
-                if span is None:
-                    print(f"Warning: Skipping entity for '{text[start:end]}' in '{text}'")
-                else:
-                    ents.append(span)
+        if self.reduction == 'mean':
+            return torch.mean(focal_loss)
+        elif self.reduction == 'sum':
+            return torch.sum(focal_loss)
+        else:
+            return focal_loss
+
+def train_model(train_dataloader: DataLoader, val_dataloader: DataLoader, epochs: int = 3):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Training on device: {device}")
+
+    model = AutoModelForTokenClassification.from_pretrained(
+        "nlpaueb/legal-bert-base-uncased", 
+        num_labels=2 
+    )
+    model.to(device)
+    optimizer = AdamW(model.parameters(), lr=5e-5)
+    criterion = FocalLoss(alpha=0.25, gamma=2.0)
+
+    for epoch in range(epochs):
+        print(f"--- Epoch {epoch + 1}/{epochs} ---")
+        model.train()
+        total_train_loss = 0
+
+        for batch in train_dataloader:
+            optimizer.zero_grad()
+            input_ids = batch['input_ids'].to(device)
+            attention_mask = batch['attention_mask'].to(device)
+            labels = batch['labels'].to(device)
+            outputs = model(input_ids, attention_mask=attention_mask)
+            logits = outputs.logits
+            active_loss = attention_mask.view(-1) == 1
+            active_logits = logits.view(-1, 2)[active_loss]
+            active_labels = labels.view(-1)[active_loss]
+
+            # Apply Focal Loss
+            loss = criterion(active_logits, active_labels)
             
-            example = Example.from_dict(doc, {"entities": ents})
-            examples.append(example)
-        except Exception as e:
-            print(f"Error processing: {text} | {e}")
-    
-    print(f"Created {len(examples)} training examples.")
+            # Backpropagation
+            loss.backward()
+            optimizer.step()
 
-    # 5. Start the training
-    print("Initializing training...")
-    
-    # Disable other pipes during training for efficiency
-    disabled_pipes = [pipe for pipe in nlp.pipe_names if pipe != "ner"]
-    
-    with nlp.select_pipes(disable=disabled_pipes):
-        optimizer = nlp.initialize(lambda: examples)
+            total_train_loss += loss.item()
 
-        # 6. Train the model
-        n_iter = 30  # Increased iterations for better learning
-        print(f"Training for {n_iter} iterations...")
-        
-        for itn in range(n_iter):
-            random.shuffle(examples)
-            losses = {}
-            
-            # This is the main training loop
-            nlp.update(examples, drop=0.3, losses=losses, sgd=optimizer)
-            
-            if itn % 10 == 0:
-                print(f"Iteration {itn}/{n_iter}, Losses: {losses}")
-
-    # 7. Save the trained model to disk
-    nlp.to_disk(model_output_dir)
-    print(f"\nSuccess! Model trained and saved to '{model_output_dir}'")
-    print("You can now use this model in your main application.")
+        avg_train_loss = total_train_loss / len(train_dataloader)
+        print(f"Average Training Loss: {avg_train_loss:.4f}")
+    output_dir = "./saved_model"
+    os.makedirs(output_dir, exist_ok=True)
+    model.save_pretrained(output_dir)
+    print(f"Training complete. Model weights saved to {output_dir}")
 
 if __name__ == "__main__":
-    train_spacy_model()
+    print("Initializing training sequence...")
+    train_loader,val_loader = prepare_dataloaders(json_path="train.json", batch_size=16)
+    train_model(train_loader,val_loader)
